@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{props.name}}</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="header-nav">
+            <dl class="menu">
+                <dt><a href="/">Inicio</a></dt>
+                <dt><a href="/iniciar-sesion">Iniciar Sesión</a></dt>
+                <dt><a href="/registro">Registarse</a></dt>
+            </dl>
+        </nav>
+    </header>
+    <!-- <aside>
+        <nav aria-label="side-nav">
+
+        </nav>
+    </aside> -->
+    <main>
+        <!-- <section>
+            <article>
+                Home
+            </article>
+        </section> -->
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer></footer>
+</body>
+</html>
