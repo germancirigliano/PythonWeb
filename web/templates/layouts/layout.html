@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth focus:scroll-auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
     <title>{{props.name}}</title>
 </head>
-<body>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
     <header>
         <nav aria-label="header-nav">
             <dl class="menu">
@@ -15,20 +16,13 @@
             </dl>
         </nav>
     </header>
-    <!-- <aside>
-        <nav aria-label="side-nav">
-
-        </nav>
-    </aside> -->
     <main>
-        <!-- <section>
-            <article>
-                Home
-            </article>
-        </section> -->
+        <img src="/images/test.jpg" width="400" height="400" alt="test" />
         {% block content %}{% endblock %}
     </main>
 
-    <footer></footer>
+    <footer>
+        © {{ props.year }} - {{ props.company }}. Todos los derechos reservados.
+    </footer>
 </body>
 </html>
